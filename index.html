@@ -6,48 +6,50 @@
         .gmail-button {
         border: none;
         background-color: inherit;
-        position: relative;
-        margin-left: 84%;  
         font-family: Arial, Helvetica, sans-serif;
         cursor: pointer;
+        display: inline-flex;
     }
 
         .image-button {
         border: none;
         background-color: inherit;
-        position: relative;
-        margin-left: 0%;
         font-family: Arial, Helvetica, sans-serif;
         cursor: pointer;
+        display: inline-flex;
+        padding-right: 10px;
     }
 
         .apps-btn {
-        background-image: url('../the_odin_project/images/g-app.png');
-        position: absolute;
-        margin-left: 1%;
-        margin-top: 3px;
+        background-image: url('g-app.png');
+        position: relative;
+        top: 3px;
+        display: inline-flex;        
         height: 15px;
         width: 15px;
         border: none;
         color: white;  
         cursor: pointer;
         color: #000;
+        margin-right: 10px;
+        margin-left: 5px;
     }
 
         .contact-btn {
-        background-image: url('../the_odin_project/images/contact-image.png');
-        position: absolute;
-        margin-left: 50px;
-        margin-top: -3px;
+        background-image: url('contact-image.png');
+        display: inline-flex;
+        position: relative;
+        top: 10px;
         height: 30px;
         width: 30px;
         border: none;
         color: white;  
         cursor: pointer;
+        margin-left: 5px;
     }
 
         .ggle-logo {
-        background-image: url('../the_odin_project/images/g-logo.png');
+        background-image: url('g-logo.png');
         display: block;
         position: relative;
         margin-top: 152px;
@@ -59,18 +61,17 @@
     }
 
         .ggle-srch { 
-        display: block;
+        display: flex;
         position: relative;
         margin-left: auto;
         margin-right: auto;
         border: none;
         font-family: 'font-Awesome', sans-serif;
-        -moz-appearance: none;
         padding-top: 25px;
-        padding-left: 380px;
         
     }
         .search-bar {
+        display: flex;
         width: 550px;
         padding-bottom: 15px;
         padding-top: 15px;
@@ -89,11 +90,12 @@
     }
         
         .ggle-srch .fa-search {
-        position: absolute;
-        left: 400px;
+        position: relative;
+        left: 50%;
         top: 40px;
         color:rgb(177, 175, 175);
         font-size: 15px;
+        z-index: 4;
         }
 
         .search-bar:hover {
@@ -101,17 +103,28 @@
         }
 
         .pad-ng {
-        padding-top: 20px;
+        padding-top: 10px;
+        padding-right: 30px;
+        text-align: right;
     }
+
         .new-btn {
-        position:absolute;
-        padding: 2px;
+        text-align: center;
+        padding: 5px;
         top: 380px;
-        left: 540px;
 
         }   
 
+        .g-dood {
+        display: inline-flex;
+        }
+
+        .g-lng {
+        text-align: center;
+        }
+
         .g-srch {
+        display: flex;
         padding: 10px;
         margin: 10px;
         font-family: Arial, sans-serif;
@@ -128,6 +141,7 @@
         }
 
         .doodle {
+        display: flex;
         padding: 10px;
         margin: 10px;
         font-family: Arial, sans-serif;
@@ -159,124 +173,130 @@
         text-decoration: underline;
     }
 
-    .lang {
-    position: absolute;
-    top: 450px;
-    left: 520px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+        .lang {
+        top: 450px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        }
+
+        .lng1 {
+        display: inline-flex;
+        top: 450px;
+        color: rgb(0, 0, 145);
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: inherit;
+        border: none;
+        }
+
+        .lng2 {
+        display: inline-flex;
+        top: 450px;
+        color: rgb(0, 0, 145);
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: inherit;
+        border: none;
+        }
+
+        .lng3 {
+        display: inline-flex;
+        top: 450px;
+        color: rgb(0, 0, 145);
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: inherit;
+        border: none;
+        }
+
+        .lng4 {
+        display: inline-flex;
+        top: 463px;
+        color: rgb(0, 0, 145);
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: inherit;
+        border: none;
+        }
+
+        .lng1:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        }
+
+        .lng2:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        }
+
+        .lng3:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        }
+
+        .lng4:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        }
+
+        .navbar {
+        background-color: rgba(240, 240, 240, 0.993);
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        border-bottom: 1px solid #e7e7e7;
+        border-top: 1px solid #e7e7e7;
+        display: inline-flex;
+        z-index: 4;
     }
 
-    .lng1 {
-    position: absolute;
-    top: 463px;
-    left: 620px;
-    color: rgb(0, 0, 145);
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: inherit;
-    border: none;
+        .navbar .nav2 {
+        display: inline-flex;
+        }   
+
+        .navbar .nav-2 {
+        text-align: left;
+        }
+
+
+        .uppernav {
+        background-color: rgba(240, 240, 240, 0.993);
+        overflow: hidden;
+        position: fixed;
+        bottom: 40px;
+        width: 100%;
+        border-bottom: 1px solid #e7e7e7;
+        border-top: 1px solid #e7e7e7;
+        z-index: 4;
+        
+    }
+        .uppernav a {
+        color: #777676;
+        padding: 14px 14px;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline-flex;
     }
 
-    .lng2 {
-    position: absolute;
-    top: 463px;
-    left: 670px;
-    color: rgb(0, 0, 145);
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: inherit;
-    border: none;
+        .navbar a {
+        color: #777676;
+        padding: 14px 14px;
+        text-decoration: none;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif; 
+        
     }
 
-    .lng3 {
-    position: absolute;
-    top: 463px;
-    left: 705px;
-    color: rgb(0, 0, 145);
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: inherit;
-    border: none;
-    }
+        .navbar .nav-1 {
+        text-align: right;
+        float: right;
+        }
 
-    .lng4 {
-    position: absolute;
-    top: 463px;
-    left: 760px;
-    color: rgb(0, 0, 145);
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: inherit;
-    border: none;
-    }
+        .navbar .nav1 {
+        position: absolute;
+        left: 79%;
+        display: inline-flex;
+        }
 
-    .lng1:hover {
-    cursor: pointer;
-    text-decoration: underline;
-    }
-
-    .lng2:hover {
-    cursor: pointer;
-    text-decoration: underline;
-    }
-
-    .lng3:hover {
-    cursor: pointer;
-    text-decoration: underline;
-    }
-
-    .lng4:hover {
-    cursor: pointer;
-    text-decoration: underline;
-    }
-
-    .navbar {
-    background-color: rgba(240, 240, 240, 0.993);
-    overflow: hidden;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    border-bottom: 1px solid #e7e7e7;
-    border-top: 1px solid #e7e7e7;
-    min-width: 980px;
-}
-
-    .uppernav {
-    background-color: rgba(240, 240, 240, 0.993);
-    overflow: hidden;
-    position: fixed;
-    bottom: 40px;
-    width: 100%;
-    border-bottom: 1px solid #e7e7e7;
-    border-top: 1px solid #e7e7e7;
-    
-}
-    .uppernav a {
-    float: left;
-    color: #777676;
-    text-align: center;
-    padding: 14px 14px;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-    .navbar a {
-    float: left;
-    display: block;
-    color: #777676;
-    text-align: center;
-    padding: 14px 14px;
-    text-decoration: none;
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-
-    .navbar .nav1 {
-    position: absolute;
-    left: 1140px;
-    }
-
-
-</style>
+    </style>
 </head>
 
 <body>
@@ -293,39 +313,47 @@
     
     <div class="ggle-srch">
             <input class="search-bar" type="text" >
-            <i class="fa fa-search"></i>
+            <!-- <i class="fa fa-search"></i>  -->
     </div>
-
     <div class="new-btn">
-        <button class="g-srch" >Google Search</button>
+        <div class="g-dood">
+            <button class="g-srch" >Google Search</button>
 
-        <button class="doodle" >I'm Feeling Lucky</button>
+            <button class="doodle" >I'm Feeling Lucky</button>
+        </div>
     </div>
 
-    <div class="lang">
-        <p>Google offered in</p>
+    <div class="g-lng">
+        <div class="lang">
+            <a>Google offered in</a>
 
+            <button class="lng1">Hausa</button>
+            <button class="lng2">Igbo</button>
+            <button class="lng3">Yoruba</button>
+            <button class="lng4">Nigerian Pidgin</button>
+        </div>
     </div>
 
-    <div class="lng">
-        <button class="lng1">Hausa</button>
-        <button class="lng2">Igbo</button>
-        <button class="lng3">Yoruba</button>
-        <button class="lng4">Nigerian Pidgin</button>
-    </div>
+
     <div class="uppernav">
         <a class="nav">Nigeria</a>
     </div>
     <div class="navbar">
-            <a class="nav" href="#">Advertising</a>
-            <a class="nav" href="#">Business</a>
-            <a class="nav" href="#">About</a>
-            <a class="nav" href="#">How Search works</a>
-            <div class="nav1">
-                <a class="nav" href="#">Privacy</a>
-                <a class="nav" href="#">Terms</a>
-                <a class="nav" href="#">Settings</a>
+        <div class="nav-2">
+            <div class="nav2">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">About</a>
+                <a href="#">How Search works</a>
             </div>
+        </div>
+        <div class="nav-1">
+            <div class="nav1">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
     </div>
 
 </body>
