@@ -6,44 +6,46 @@
         .gmail-button {
         border: none;
         background-color: inherit;
-        position: relative;
-        margin-left: 84%;  
         font-family: Arial, Helvetica, sans-serif;
         cursor: pointer;
+        display: inline-flex;
     }
 
         .image-button {
         border: none;
         background-color: inherit;
-        position: relative;
-        margin-left: 0%;
         font-family: Arial, Helvetica, sans-serif;
         cursor: pointer;
+        display: inline-flex;
+        padding-right: 10px;
     }
 
         .apps-btn {
         background-image: url('g-app.png');
-        position: absolute;
-        margin-left: 1%;
-        margin-top: 3px;
+        position: relative;
+        top: 3px;
+        display: inline-flex;        
         height: 15px;
         width: 15px;
         border: none;
         color: white;  
         cursor: pointer;
         color: #000;
+        margin-right: 10px;
+        margin-left: 5px;
     }
 
         .contact-btn {
         background-image: url('contact-image.png');
-        position: absolute;
-        margin-left: 50px;
-        margin-top: -3px;
+        display: inline-flex;
+        position: relative;
+        top: 10px;
         height: 30px;
         width: 30px;
         border: none;
         color: white;  
         cursor: pointer;
+        margin-left: 5px;
     }
 
         .ggle-logo {
@@ -100,7 +102,9 @@
         }
 
         .pad-ng {
-        padding-top: 20px;
+        padding-top: 10px;
+        padding-right: 30px;
+        text-align: right;
     }
 
         .new-btn {
@@ -112,6 +116,10 @@
 
         .g-dood {
         display: inline-flex;
+        }
+
+        .g-lng {
+        text-align: center;
         }
 
         .g-srch {
@@ -165,19 +173,14 @@
     }
 
     .lang {
-    display: flex;
-    position: absolute;
     top: 450px;
-    left: 520px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     }
 
     .lng1 {
-        display: flex;
-    position: absolute;
-    top: 463px;
-    left: 620px;
+    display: inline-flex;
+    top: 450px;
     color: rgb(0, 0, 145);
     font-family: Arial, Helvetica, sans-serif;
     background-color: inherit;
@@ -185,10 +188,8 @@
     }
 
     .lng2 {
-        display: flex;
-    position: absolute;
-    top: 463px;
-    left: 670px;
+    display: inline-flex;
+    top: 450px;
     color: rgb(0, 0, 145);
     font-family: Arial, Helvetica, sans-serif;
     background-color: inherit;
@@ -196,10 +197,8 @@
     }
 
     .lng3 {
-        display: flex;
-    position: absolute;
-    top: 463px;
-    left: 705px;
+    display: inline-flex;
+    top: 450px;
     color: rgb(0, 0, 145);
     font-family: Arial, Helvetica, sans-serif;
     background-color: inherit;
@@ -207,10 +206,8 @@
     }
 
     .lng4 {
-        display: flex;
-    position: absolute;
+    display: inline-flex;
     top: 463px;
-    left: 760px;
     color: rgb(0, 0, 145);
     font-family: Arial, Helvetica, sans-serif;
     background-color: inherit;
@@ -290,7 +287,7 @@
     .navbar .nav1 {
     display: flex;
     position: absolute;
-    margin-left: 83%;
+    margin-left: 80%;
     flex-shrink: 0.5;
     }
 
@@ -321,17 +318,19 @@
             <button class="doodle" >I'm Feeling Lucky</button>
         </div>
     </div>
-    <div class="lang">
-        <p>Google offered in</p>
 
+    <div class="g-lng">
+        <div class="lang">
+            <a>Google offered in</a>
+
+            <button class="lng1">Hausa</button>
+            <button class="lng2">Igbo</button>
+            <button class="lng3">Yoruba</button>
+            <button class="lng4">Nigerian Pidgin</button>
+        </div>
     </div>
 
-    <div class="lng">
-        <button class="lng1">Hausa</button>
-        <button class="lng2">Igbo</button>
-        <button class="lng3">Yoruba</button>
-        <button class="lng4">Nigerian Pidgin</button>
-    </div>
+
     <div class="uppernav">
         <a class="nav">Nigeria</a>
     </div>
