@@ -59,18 +59,17 @@
     }
 
         .ggle-srch { 
-        display: block;
+        display: flex;
         position: relative;
         margin-left: auto;
         margin-right: auto;
         border: none;
         font-family: 'font-Awesome', sans-serif;
-        -moz-appearance: none;
         padding-top: 25px;
-        padding-left: 380px;
         
     }
         .search-bar {
+        display: flex;
         width: 550px;
         padding-bottom: 15px;
         padding-top: 15px;
@@ -103,15 +102,20 @@
         .pad-ng {
         padding-top: 20px;
     }
+
         .new-btn {
-        position:absolute;
-        padding: 2px;
+        text-align: center;
+        padding: 5px;
         top: 380px;
-        left: 540px;
 
         }   
 
+        .g-dood {
+        display: inline-flex;
+        }
+
         .g-srch {
+        display: flex;
         padding: 10px;
         margin: 10px;
         font-family: Arial, sans-serif;
@@ -128,6 +132,7 @@
         }
 
         .doodle {
+        display: flex;
         padding: 10px;
         margin: 10px;
         font-family: Arial, sans-serif;
@@ -160,6 +165,7 @@
     }
 
     .lang {
+    display: flex;
     position: absolute;
     top: 450px;
     left: 520px;
@@ -168,6 +174,7 @@
     }
 
     .lng1 {
+        display: flex;
     position: absolute;
     top: 463px;
     left: 620px;
@@ -178,6 +185,7 @@
     }
 
     .lng2 {
+        display: flex;
     position: absolute;
     top: 463px;
     left: 670px;
@@ -188,6 +196,7 @@
     }
 
     .lng3 {
+        display: flex;
     position: absolute;
     top: 463px;
     left: 705px;
@@ -198,6 +207,7 @@
     }
 
     .lng4 {
+        display: flex;
     position: absolute;
     top: 463px;
     left: 760px;
@@ -236,9 +246,12 @@
     border-bottom: 1px solid #e7e7e7;
     border-top: 1px solid #e7e7e7;
     min-width: 980px;
+    display: flex;
+    flex-shrink: 0.5;
 }
 
     .uppernav {
+    display: flex;
     background-color: rgba(240, 240, 240, 0.993);
     overflow: hidden;
     position: fixed;
@@ -247,8 +260,11 @@
     border-bottom: 1px solid #e7e7e7;
     border-top: 1px solid #e7e7e7;
     
+    
 }
     .uppernav a {
+    display: flex;
+    flex-shrink: 0.5;
     float: left;
     color: #777676;
     text-align: center;
@@ -259,7 +275,8 @@
 }
 
     .navbar a {
-    float: left;
+    display: flex;
+    flex-shrink: 0.5;
     display: block;
     color: #777676;
     text-align: center;
@@ -271,8 +288,10 @@
 }
 
     .navbar .nav1 {
+    display: flex;
     position: absolute;
-    left: 1140px;
+    margin-left: 83%;
+    flex-shrink: 0.5;
     }
 
 
@@ -295,13 +314,13 @@
             <input class="search-bar" type="text" >
             <i class="fa fa-search"></i>
     </div>
-
     <div class="new-btn">
-        <button class="g-srch" >Google Search</button>
+        <div class="g-dood">
+            <button class="g-srch" >Google Search</button>
 
-        <button class="doodle" >I'm Feeling Lucky</button>
+            <button class="doodle" >I'm Feeling Lucky</button>
+        </div>
     </div>
-
     <div class="lang">
         <p>Google offered in</p>
 
