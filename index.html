@@ -1,1 +1,333 @@
+<!DOCTYPE html>
+<head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <style>
+        .gmail-button {
+        border: none;
+        background-color: inherit;
+        position: relative;
+        margin-left: 84%;  
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+
+        .image-button {
+        border: none;
+        background-color: inherit;
+        position: relative;
+        margin-left: 0%;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+
+        .apps-btn {
+        background-image: url('../the_odin_project/images/g-app.png');
+        position: absolute;
+        margin-left: 1%;
+        margin-top: 3px;
+        height: 15px;
+        width: 15px;
+        border: none;
+        color: white;  
+        cursor: pointer;
+        color: #000;
+    }
+
+        .contact-btn {
+        background-image: url('../the_odin_project/images/contact-image.png');
+        position: absolute;
+        margin-left: 50px;
+        margin-top: -3px;
+        height: 30px;
+        width: 30px;
+        border: none;
+        color: white;  
+        cursor: pointer;
+    }
+
+        .ggle-logo {
+        background-image: url('../the_odin_project/images/g-logo.png');
+        display: block;
+        position: relative;
+        margin-top: 152px;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+        width: 272px;
+        height: 92px;
+    }
+
+        .ggle-srch { 
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+        font-family: 'font-Awesome', sans-serif;
+        -moz-appearance: none;
+        padding-top: 25px;
+        padding-left: 380px;
+        
+    }
+        .search-bar {
+        width: 550px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        padding-left: 20px;
+        outline: none;
+        border: 1px solid #dfe1e5;
+        box-shadow: none;
+        border-radius: 25px;
+        z-index: 3;
+        height: 18px;
+        margin: 0 auto;
+        -moz-appearance: none;
+        float: left;
+        transition: box-shadow .3s;
+        text-indent: 30px;
+    }
+        
+        .ggle-srch .fa-search {
+        position: absolute;
+        left: 400px;
+        top: 40px;
+        color:rgb(177, 175, 175);
+        font-size: 15px;
+        }
+
+        .search-bar:hover {
+        box-shadow: 0 0 11px rgba(33,33,33,.2);
+        }
+
+        .pad-ng {
+        padding-top: 20px;
+    }
+        .new-btn {
+        position:absolute;
+        padding: 2px;
+        top: 380px;
+        left: 540px;
+
+        }   
+
+        .g-srch {
+        padding: 10px;
+        margin: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color:rgb(100, 100, 100);
+        border: none;
+        border-radius: 5px;
+        background-color:rgba(223, 224, 224, 0.397);
+        }
+
+        .g-srch:hover {
+        box-shadow: 0 0 2px rgba(131, 131, 131, 0.699);
+        cursor: pointer;
+        }
+
+        .doodle {
+        padding: 10px;
+        margin: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color:rgb(100, 100, 100);
+        border: none;
+        border-radius: 5px;
+        background-color:rgba(223, 224, 224, 0.397);
+        }
+
+        .doodle:hover {
+        box-shadow: 0 0 2px rgba(131, 131, 131, 0.699);
+        cursor: pointer;
+        }
+
+        .pad-ng button:link {
+        text-decoration: none;
+    }
+
+        .pad-ng button:visited {
+        text-decoration: none;
+    }
+
+        .pad-ng button:hover {
+        text-decoration: underline;
+    }
+
+        .pad-ng button:active {
+        text-decoration: underline;
+    }
+
+    .lang {
+    position: absolute;
+    top: 450px;
+    left: 520px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    }
+
+    .lng1 {
+    position: absolute;
+    top: 463px;
+    left: 620px;
+    color: rgb(0, 0, 145);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: inherit;
+    border: none;
+    }
+
+    .lng2 {
+    position: absolute;
+    top: 463px;
+    left: 670px;
+    color: rgb(0, 0, 145);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: inherit;
+    border: none;
+    }
+
+    .lng3 {
+    position: absolute;
+    top: 463px;
+    left: 705px;
+    color: rgb(0, 0, 145);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: inherit;
+    border: none;
+    }
+
+    .lng4 {
+    position: absolute;
+    top: 463px;
+    left: 760px;
+    color: rgb(0, 0, 145);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: inherit;
+    border: none;
+    }
+
+    .lng1:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    }
+
+    .lng2:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    }
+
+    .lng3:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    }
+
+    .lng4:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    }
+
+    .navbar {
+    background-color: rgba(240, 240, 240, 0.993);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 1px solid #e7e7e7;
+    border-top: 1px solid #e7e7e7;
+    min-width: 980px;
+}
+
+    .uppernav {
+    background-color: rgba(240, 240, 240, 0.993);
+    overflow: hidden;
+    position: fixed;
+    bottom: 40px;
+    width: 100%;
+    border-bottom: 1px solid #e7e7e7;
+    border-top: 1px solid #e7e7e7;
+    
+}
+    .uppernav a {
+    float: left;
+    color: #777676;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    .navbar a {
+    float: left;
+    display: block;
+    color: #777676;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+    .navbar .nav1 {
+    position: absolute;
+    left: 1140px;
+    }
+
+
+</style>
+</head>
+
+<body>
+    <div class="pad-ng">
+        <button type="button" class="gmail-button">Gmail</button>
+
+        <button type="button" class="image-button">Images</button>
+
+        <a class="apps-btn" role="button"></a>
+
+        <a class="contact-btn" role="button"></a>
+   </div>
+    <div class="ggle-logo"></div>
+    
+    <div class="ggle-srch">
+            <input class="search-bar" type="text" >
+            <i class="fa fa-search"></i>
+    </div>
+
+    <div class="new-btn">
+        <button class="g-srch" >Google Search</button>
+
+        <button class="doodle" >I'm Feeling Lucky</button>
+    </div>
+
+    <div class="lang">
+        <p>Google offered in</p>
+
+    </div>
+
+    <div class="lng">
+        <button class="lng1">Hausa</button>
+        <button class="lng2">Igbo</button>
+        <button class="lng3">Yoruba</button>
+        <button class="lng4">Nigerian Pidgin</button>
+    </div>
+    <div class="uppernav">
+        <a class="nav">Nigeria</a>
+    </div>
+    <div class="navbar">
+            <a class="nav" href="#">Advertising</a>
+            <a class="nav" href="#">Business</a>
+            <a class="nav" href="#">About</a>
+            <a class="nav" href="#">How Search works</a>
+            <div class="nav1">
+                <a class="nav" href="#">Privacy</a>
+                <a class="nav" href="#">Terms</a>
+                <a class="nav" href="#">Settings</a>
+            </div>
+    </div>
+
+</body>
+
+</html>
